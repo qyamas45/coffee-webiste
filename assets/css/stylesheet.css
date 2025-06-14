@@ -176,7 +176,7 @@ nav .logo {
 .intro-section img{
   border-radius:8px;
   object-fit:cover;
-  
+
 }
 .gallery-section {
   padding: 3rem 5%;
@@ -207,10 +207,36 @@ nav .logo {
   max-width: 300px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  /*transition: transform 0.3s ease;*/
 }
 
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
-  
+.visit-section {
+  padding: 3rem 5%;
+  background-color: #fdfdfc;
+}
+
+.visit-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 1.5rem;
+}
+
+.visit-text {
+  flex: 1 1 60%;
+}
+.visit-text p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.visit-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
