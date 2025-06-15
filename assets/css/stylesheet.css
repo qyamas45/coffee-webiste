@@ -100,10 +100,13 @@ nav .logo {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
+.about-text h3 {
+  font-size: 1.8rem;
+}
 .about-text p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   line-height: 1.6;
+  font-size:1.2rem;
 }
 
 .about-text ul {
@@ -113,7 +116,7 @@ nav .logo {
 
 .about-text li {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.18rem;
 }
 
 .about-image {
@@ -163,16 +166,16 @@ nav .logo {
   flex-direction: column;
   justify-content: center;
 }
-
 .intro-text h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.4rem; /* was 2rem */
+  margin-bottom: 1.2rem;
 }
 
 .intro-text p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem; /* was 1rem */
+  line-height: 1.8;   /* improved spacing */
 }
+
 .intro-section img{
   border-radius:8px;
   object-fit:cover;
@@ -184,7 +187,7 @@ nav .logo {
 }
 
 .gallery-section h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -227,16 +230,81 @@ nav .logo {
 }
 
 .visit-text {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
+}
+.visit-text h2{
+  font-size: 2.2rem;
 }
 .visit-text p {
   max-width: 600px;
   line-height: 1.6;
+  font-size:1.2
 }
 
 .visit-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.signup-section {
+  background-image: url('https://placehold.co/1200x400'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-section h2 {
+  font-size: 2.128rem;
+  margin-bottom: 1rem;
+}
+
+.signup-section p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+  font-size: 1.24rem;
+}
+
+.signup-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.signup-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #6b4f35;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #593f2b;
+}
+
+.signup-section h2,
+.signup-section p {
+  color: #fff;
+  font-weight: 700; /* makes text bold */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* soft shadow */
 }
