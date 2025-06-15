@@ -158,7 +158,7 @@ nav .logo {
   right: 0;
   width: 70%;
   height: 50%;
-  background: rgba(255, 255, 255, 0.601); /* semi-transparent background for readability */
+  background: rgba(213, 213, 213, 0.801); /* semi-transparent background for readability */
   box-shadow: -12px 0 24px rgba(0, 0, 0, 0.185);
   color: #333;
   padding: 3rem;
@@ -202,7 +202,7 @@ nav .logo {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* ✅ 3 columns */
-  gap: 1.5rem;
+  gap: 0.75rem;
   justify-items: center;
 }
 
