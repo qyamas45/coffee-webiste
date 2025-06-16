@@ -13,6 +13,7 @@ nav {
   padding: 1rem 2rem;
   font-family: 'Open Sans', sans-serif;
   border-bottom: 3px solid #917b67;
+  height:auto;
 }
 
 nav .logo {
@@ -37,6 +38,70 @@ nav .logo {
 
 .nav-links li a:hover {
   color: #d0b49f;
+}
+/* Toggle button - hidden on desktop */
+.nav-toggle {
+  display: none;
+  font-size: 2.4rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  position: absolute;
+  left: 1rem;  /* 👈 Push to the left */
+  top: 50%;
+  transform: translateY(-50%);  /* 👈 Vertically center */
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;              /* Center the links */
+    background-color: #3c2f2f;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    padding: 1rem 0;
+    display: none;                    /* Hidden by default */
+    z-index: 1000;   
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  nav img {
+    display:none;
+  }
+  .nav-links.active {
+    display: flex;                    /* Show when toggled */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    position: relative;              /* So nav-links can be absolutely positioned */
+    height:5vh;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 2rem 4rem;    /* More space */
+  }
+
+  .nav-links li a {
+    font-size: 1.25rem;    /* Slightly bigger links */
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
 }
 
 .show-wrapper {
@@ -372,4 +437,42 @@ footer {
   border-top: 1px dotted #aa9999;
   padding-top: 1rem;
   font-size: 0.9rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 24px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
