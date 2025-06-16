@@ -12,6 +12,7 @@ nav {
   color: #fff;
   padding: 1rem 2rem;
   font-family: 'Open Sans', sans-serif;
+  border-bottom: 3px solid #917b67;
 }
 
 nav .logo {
